@@ -24,7 +24,22 @@ body {
 }
 
 .container-about {
+    position: absolute;
     margin: 0 20px 0 20px;
+    animation-duration: 3s;
+    animation-name: bounceIn;
+}
+
+.container-header {
+    background-color: rgb(200, 255, 255, 0.2);
+    color: #fff;
+    height: 90px;
+    justify-content: flex-end;
+}
+
+.header-item {
+    margin-right: 40px;
+    font-size: 2.0em;
 }
 
 .about-text {
@@ -46,5 +61,19 @@ body {
 @media screen and (max-width: 768px) {
     .flex-container {
         flex-flow: column;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        left: 100px;
+    }
+    60% {
+        opacity: 1;
+        left: 20px;
+    }
+    100% {
+        left: 0;
     }
 }
