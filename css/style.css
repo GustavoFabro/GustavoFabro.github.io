@@ -69,6 +69,10 @@ header a:hover {
     article .row {
         flex-flow: column;
     }
+    .container-about {
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
     .container-header-d {
         display: none;
     }
