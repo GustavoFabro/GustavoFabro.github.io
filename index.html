@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!--Style-->
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/social-media.css">
 
-    <!--JS-->
-    <!-- <script type="text/javascript" src="libs/angular/angular.min.js"></script> -->
     <title>Gustavo Fabro</title>
 </head>
+
 <body>
     <header>
         <div class="flex-container container-header center">
-            <span class="header-item">Sobre mim</span>
-            <span class="header-item"> Projetos</span>
+            <a id="btn-about" href="#" class="header-item">About</a>
+            <a id="btn-projects" href="#" class="header-item">Projects</a>
         </div>
     </header>
-    <article class="flex-container center container-about">
-        <img class="avatar flex-item-1" src="content/avatar.png">
-        <p class="about-text flex-item-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt
-            ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt
-            mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt
-            mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt
-            mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore
-            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.</p>
+    <article>
+        <section class="flex-container container-about center">
+            <img class="avatar flex-item-1" src="content/avatar.png">
+            <p class="about-text flex-item-1">Full stack developer with three years of experience in the field. Bachelor
+                in computer science from UNESC (2014 - 2018).
+            </p>
+        </section>
+        <section class="flex-container container-projects center">
+            <p class="about-text flex-item-1">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt
+                mollit anim id est laborum.</p>
+        </section>
     </article>
+    <aside class="flex-container flex-column social-media">
+        <div class="item-media">
+            <img src="content/github-logo.png" alt="Github">
+        </div>
+        <div class="item-media">
+            <img src="content/github-logo.png" alt="Github">
+        </div>
+        <div class="item-media">
+            <img src="content/github-logo.png" alt="Github">
+        </div>
+    </aside>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script/main.js"></script>
 </body>
 
 </html>
