@@ -9,6 +9,7 @@
     <!--Style-->
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project.css">
     <link rel="stylesheet" href="css/social-media.css">
 
     <title>Gustavo Fabro</title>
@@ -16,25 +17,29 @@
 
 <body>
     <header>
-        <div class="flex-container container-header center">
+        <div class="row container-header-d center">
             <a id="btn-about" href="#" class="header-item">About</a>
             <a id="btn-projects" href="#" class="header-item">Projects</a>
         </div>
     </header>
     <article>
-        <section class="flex-container container-about center">
-            <img class="avatar flex-item-1" src="content/avatar.png">
-            <p class="about-text flex-item-1">Full stack developer with three years of experience in the field. Bachelor
-                in computer science from UNESC (2014 - 2018).
-            </p>
+        <section class="column container-about">
+            <div class="row center">
+                <div class="avatar">
+                    <img src="content/avatar2.jpg">
+                </div>
+                <p class="about-text flex-item-1">Full stack developer with three years of experience in the field.
+                    <br>Bachelora in computer science from UNESC (2014 - 2018).
+                </p>
+            </div>
         </section>
-        <section class="flex-container container-projects center">
+        <!-- <section class="d-flex container-projects center">
             <p class="about-text flex-item-1">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt
                 mollit anim id est laborum.</p>
-        </section>
+        </section> -->
     </article>
-    <aside class="flex-container flex-column social-media">
+    <aside class="column social-media">
         <div class="item-media">
             <a href="https://github.com/gustavofabro" target="_blank"><img src="content/github-logo.png" alt="GitHub"
                     title="GitHub"></a>

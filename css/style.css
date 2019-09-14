@@ -7,7 +7,7 @@ header {
 
 .header-item {
     margin-right: 40px;
-    font-size: 2.0em;
+    font-size: 1.5em;
 }
 
 header a {
@@ -20,16 +20,17 @@ header a:hover {
     color: #fff;
 }
 
-.container-header {
+.container-header-d {
     background-color: #333333;
     color: #fff;
-    height: 90px;
+    height: 60px;
     justify-content: flex-end;
 }
 
 .container-about {
     position: absolute;
-    margin: 0 20px 0 20px;
+    justify-content: center;
+    margin: 0px 20px 0 20px;
     height: 100%;
     opacity: 0;
 }
@@ -49,16 +50,26 @@ header a:hover {
 }
 
 .avatar {
-    border-radius: 30%;
+    height: 160px;
+    width: 160px;
     margin: 15px;
-    width: 100%;
-    max-width: 512px;
 }
 
+.avatar img {
+    border: 3px solid #bbbbbb;
+    border-radius: 50%;
+    height: 100%;
+}
 /*Media queries*/
 
 @media screen and (max-width: 768px) {
-    article .flex-container {
+    article .row {
         flex-flow: column;
+    }
+    .container-header-d {
+        display: none;
+    }
+    .about-text {
+        text-align: center;
     }
 }

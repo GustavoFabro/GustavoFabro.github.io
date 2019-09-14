@@ -26,8 +26,16 @@
 }
 
 @media screen and (max-width: 768px) {
-    .flex-container.social-media {
+    .column.social-media {
         flex-flow: row;
         width: 100%;
+        height: 0;
+        bottom: 0;
+    }
+    .item-media {
+        opacity: 1;
+    }
+    .item-media:hover {
+        margin: 10px 10px 15px 10px;
     }
 }
