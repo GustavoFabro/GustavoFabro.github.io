@@ -58,7 +58,7 @@ header a:hover {
 /*Media queries*/
 
 @media screen and (max-width: 768px) {
-    .flex-container {
+    article .flex-container {
         flex-flow: column;
     }
 }

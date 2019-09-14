@@ -24,3 +24,10 @@
     opacity: 1;
     margin-right: 15px;
 }
+
+@media screen and (max-width: 768px) {
+    .flex-container.social-media {
+        flex-flow: row;
+        width: 100%;
+    }
+}
