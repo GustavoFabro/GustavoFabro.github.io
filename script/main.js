@@ -22,24 +22,24 @@ function onPageReady() {
     function showAboutMe() {
         containerAbout.animate({
             opacity: 1
-        }, 1000);
+        }, 400);
     }
 
     function hideAboutMe() {
         containerAbout.animate({
             opacity: 0
-        }, 1000);
+        }, 400);
     }
 
     function showProjects() {
         containerProjects.animate({
             opacity: 1
-        }, 1000);
+        }, 400);
     }
 
     function hideProjects() {
         containerProjects.animate({
             opacity: 0
-        }, 1000);
+        }, 400);
     }
 }
