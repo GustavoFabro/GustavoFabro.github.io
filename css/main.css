@@ -1,37 +1,9 @@
-header {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-}
-
-.header-item {
-    margin-right: 40px;
-    font-size: 1.5em;
-}
-
-header a {
-    text-decoration: none;
-    color: #969696;
-    cursor: pointer;
-}
-
-header a:hover {
-    color: #fff;
-}
-
-.container-header-d {
-    background-color: #333333;
-    color: #fff;
-    height: 60px;
-    justify-content: flex-end;
-}
-
 .container-about {
     position: absolute;
     justify-content: center;
-    margin: 0px 20px 0 20px;
+    padding: 5px;
     height: 100%;
+    width: 100%;
     opacity: 0;
 }
 
@@ -43,13 +15,15 @@ header a:hover {
 }
 
 .name {
-    font-size: 36px;
+    font-size: 4em; 
     line-height: 1.5;
     margin: 0;
 }
 
 .about-text {
+    font-size: 1.5em;
     line-height: 1.5;
+    text-align: center;
 }
 
 .avatar {
@@ -63,6 +37,28 @@ header a:hover {
     border-radius: 50%;
     height: 100%;
 }
+
+footer {
+    position: absolute;
+    justify-content: space-around;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    z-index: 1;
+}
+
+footer a {
+    text-decoration: none;
+    color: #969696;
+    font-size: 1.5em; 
+    cursor: pointer;
+    transition: color 0.4s;
+}
+
+footer a:hover {
+    color: #575252;
+}
+
 /*Media queries*/
 
 @media screen and (max-width: 768px) {
@@ -73,7 +69,7 @@ header a:hover {
         justify-content: flex-start;
         margin-top: 20px;
     }
-    .container-header-d {
+    .container-footer-d {
         display: none;
     }
     .about-text, .name {
