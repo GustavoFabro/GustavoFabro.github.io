@@ -58,12 +58,13 @@ footer a:hover {
 
 /*Media queries*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
     article .row {
         flex-flow: column;
     }
     .container {
         justify-content: flex-start;
+        padding: 15px;
     }
     .container-footer-d {
         display: none;
