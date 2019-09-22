@@ -22,7 +22,6 @@
 }
 
 .timeline .company:before {
-    content: attr(data-date);
     left: -320px;
     top: 48%;
     width: 65%;
@@ -45,7 +44,6 @@
     border-radius: 15px;
     background-color: #e8e8e8;
     margin-top: 5px;
-    width: 400px;
 }
 
 .inside-exp .role {
