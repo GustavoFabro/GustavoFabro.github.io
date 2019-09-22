@@ -7,12 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300&display=swap" rel="stylesheet">
+    <!-- 'Lato', sans-serif -->
+
 
     <!--Style-->
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/social-media.css">
-    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/timeline.css">
 
     <title>Gustavo Fabro</title>
 </head>
@@ -25,7 +28,7 @@
         </div>
     </header> -->
     <article>
-        <section class="column container-about center">
+        <section id="content-about" class="column container center">
             <div class="avatar">
                 <img src="content/avatar.jpg">
             </div>
@@ -34,11 +37,40 @@
                 <br>Bachelor in computer science from UNESC (2014 - 2018)
             </p>
         </section>
+        <section id="content-experience" class="column container center">
+            <ul class="column timeline">
+                <li class="company" data-date="abr de 2019 - moment">
+                    <h3>Betha Sistemas</h3>
+                    <div class="role">
+                        <div class="inside-exp">
+                            <span class="title">Full Stack Developer</span>
+                            <p class="content">Web developer working with AngularJS in front-end and Java Spring Boot in
+                                back-end with Postgres database</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="company" data-date="set de 2016 - abr de 2019">
+                    <h3>Useall Software</h3>
+                    <div class="inside-exp">
+                        <div class="role">
+                            <span class="title">Full Stack Developer</span>
+                            <div class="period">jun de 2017 – abr de 2019</div>
+                            <p>Web developer working in front-end with Ext JS Framework and back-end with C# .NET and
+                                Oracle
+                                database</p>
+                        </div>
+                        <div class="role">
+                            <div class="title">PowerBuilder developer</div>
+                            <div class="period">set de 2016 – mai de 2017</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </article>
     <footer class="row center">
-        <a id="btn-about" href="#">About</a>
-        <a id="btn-experience" href="#">Experience</a>
-        <a id="btn-projects" href="#">Projects</a>
+        <a class="btn-view" id="btn-about" data-for="about" href="#">About</a>
+        <a class="btn-view" id="btn-experience" data-for="experience" href="#">Experience</a>
     </footer>
     <aside class="column social-media">
         <div class="item-media">

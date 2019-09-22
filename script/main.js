@@ -1,45 +1,11 @@
 $(document).ready(onPageReady);
 
 function onPageReady() {
-    let btnAbout = $('#btn-about')
-    let btnProjects = $('#btn-projects')
+    $('.btn-view').click(e => {
+        let target = $(e.target).attr('data-for');
 
-    const containerProjects = $('.container-projects')
-    const containerAbout = $('.container-about')
+        $('[id^="content"]').hide()
 
-    showAboutMe();
-
-    btnAbout.click(e => {
-        showAboutMe();
-        hideProjects();
+        $(`[id="content-${target}"]`).fadeTo("slow", 1);
     })
-
-    btnProjects.click(e => {
-        hideAboutMe();
-        showProjects();
-    })
-
-    function showAboutMe() {
-        containerAbout.animate({
-            opacity: 1
-        }, 400);
-    }
-
-    function hideAboutMe() {
-        containerAbout.animate({
-            opacity: 0
-        }, 400);
-    }
-
-    function showProjects() {
-        containerProjects.animate({
-            opacity: 1
-        }, 400);
-    }
-
-    function hideProjects() {
-        containerProjects.animate({
-            opacity: 0
-        }, 400);
-    }
 }

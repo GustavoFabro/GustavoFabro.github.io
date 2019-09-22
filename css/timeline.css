@@ -1,0 +1,61 @@
+.timeline {
+    border-left: 5px solid blue;
+    list-style: none;
+    padding-top: 30px;
+    font-family: 'Chivo', sans-serif;
+}
+
+.timeline .company {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline .company h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.timeline .company:before, .timeline .company:after {
+    position: absolute;
+    display: block;
+}
+
+.timeline .company:before {
+    content: attr(data-date);
+    left: -320px;
+    top: 48%;
+    width: 65%;
+    text-align: right;
+}
+
+.timeline .company:after {
+    box-shadow: 0 0 0 4px #004ffc;
+    background: #313534;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+    left: -48px;
+    top: 50%
+}
+
+.company .inside-exp {
+    padding: 13px;
+    border-radius: 15px;
+    background-color: #e8e8e8;
+    margin-top: 5px;
+    width: 400px;
+}
+
+.inside-exp .role {
+    margin-bottom: 10px;
+}
+
+.role .title {
+    font-weight: bold;
+}
+
+.role .period {
+    font-size: .9em;
+    margin-top: 5px;
+}

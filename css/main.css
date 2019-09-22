@@ -1,16 +1,12 @@
-.container-about {
+.container {
     position: absolute;
     justify-content: center;
     padding: 5px;
     height: 100%;
     width: 100%;
-    opacity: 0;
 }
 
-.container-projects {
-    position: absolute;
-    margin: 0 20px 0 20px;
-    height: 100%;
+#content-experience {
     opacity: 0;
 }
 
@@ -65,14 +61,16 @@ footer a:hover {
     article .row {
         flex-flow: column;
     }
-    .container-about {
+    .container {
         justify-content: flex-start;
-        margin-top: 20px;
     }
     .container-footer-d {
         display: none;
     }
     .about-text, .name {
         text-align: center;
+    }
+    footer {
+        bottom: 60px
     }
 }
