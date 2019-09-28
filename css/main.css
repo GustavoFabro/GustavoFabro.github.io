@@ -6,12 +6,89 @@
     width: 100%;
 }
 
+.menu {
+    background-color: #333;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    transition: height 0.4s;
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Chivo', sans-serif;
+}
+
+header a {
+    color: white;
+}
+
+.menu-item {
+    background-color: transparent;
+    height: 100%;
+    width: 155px;
+}
+
+.menu-item.selected a {
+    font-weight: bold;
+}
+
+.menu-item.selected {
+    background-color: #4c4c4c;
+}
+
+.menu-item:hover {
+    cursor: pointer
+}
+
+.mobile-toggle-menu {
+    display: none;
+    z-index: 1;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    height: 0;
+    display: none;
+    background-color: white;
+    width: 100%;
+}
+
+.mobile-menu .menu-mobile-item {
+    padding: 10px;
+    color: #333;
+    font-size: 25px;
+}
+
+.mobile-menu .menu-mobile-item:hover {
+    font-weight: bold;
+}
+
+.mobile-menu.selected {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    z-index: 1;
+}
+
+.menu-bar {
+    font-size: 20px;
+}
+
 #content-experience {
     opacity: 0;
 }
 
 .name {
-    font-size: 4em; 
+    font-size: 4em;
     line-height: 1.5;
     margin: 0;
     color: #212121;
@@ -30,35 +107,23 @@
 }
 
 .avatar img {
-    box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.61);
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.61);
     border-radius: 50%;
     height: 100%;
-}
-
-footer {
-    position: absolute;
-    justify-content: space-around;
-    width: 100%;
-    height: 70px;
-    bottom: 0;
-    z-index: 1;
-}
-
-footer a {
-    text-decoration: none;
-    color: #969696;
-    font-size: 1.5em; 
-    cursor: pointer;
-    transition: color 0.4s;
-}
-
-footer a:hover {
-    color: #575252;
 }
 
 /*Media queries*/
 
 @media screen and (max-width: 620px) {
+    header {
+        justify-content: flex-end;
+    }
+    header .mobile-toggle-menu {
+        display: block;
+    }
+    header .menu {
+        display: none;
+    }
     article .row {
         flex-flow: column;
     }
@@ -71,8 +136,5 @@ footer a:hover {
     }
     .about-text, .name {
         text-align: center;
-    }
-    footer {
-        bottom: 60px
     }
 }

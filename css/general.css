@@ -5,17 +5,22 @@
 }
 
 body {
-/*     background-image: url('/content/wall1.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; */
-    background-color: #f9f9f9;
     height: 100vh;
     margin: 0;
     font-family: 'Marcellus SC', serif;
     font-size: 20px;
     color: #616161;
+}
+
+.bg-image {
+    background-image: url('/content/1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #f9f9f9;
+    position: absolute;
+    height: 100%;
 }
 
 .row {
@@ -38,10 +43,14 @@ body {
 
 .center {
     align-items: center;
+    justify-content: center;
 }
 
+.hidden {
+    display: none;
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
     body {
         font-size: 12px;
     }

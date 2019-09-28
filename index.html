@@ -8,8 +8,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Chivo:300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6bcb876b8d.js" crossorigin="anonymous"></script>
     <!-- 'Lato', sans-serif -->
-
 
     <!--Style-->
     <link rel="stylesheet" href="css/general.css">
@@ -21,12 +21,24 @@
 </head>
 
 <body>
-    <!--   <header>
-        <div class="row container-header-d center">
-            <a id="btn-about" href="#" class="header-item">About</a>
-            <a id="btn-projects" href="#" class="header-item">Projects</a>
+    <header class="row">
+        <div class="row menu center">
+            <div class="row center menu-item selected" data-for="about">
+                <a href="#">ABOUT</a>
+            </div>
+            <div class="row center menu-item" data-for="experience">
+                <a href="#">EXPERIENCE</a>
+            </div>
         </div>
-    </header> -->
+        <div class="row mobile-toggle-menu">
+            <i class="fa fa-bars menu-bar "></i>
+        </div>
+    </header>
+    <div class="bg-image"></div>
+    <div class="column mobile-menu center">
+        <a class="menu-mobile-item" href="#" data-for="about">ABOUT</a>
+        <a class="menu-mobile-item" href="#" data-for="experience">EXPERIENCE</a>
+    </div>
     <article class="column">
         <section id="content-about" class="column container center">
             <div class="avatar">
@@ -41,6 +53,7 @@
             <ul class="timeline">
                 <li class="company" data-date="Apr 2019 - Present">
                     <h3>Betha Sistemas</h3>
+                    <span class="period">Apr 2019 – Present</span><!-- Calculate period -->
                     <div class="inside-exp">
                         <div class="role">
                             <span class="title">Full Stack Developer</span>
@@ -51,6 +64,7 @@
                 </li>
                 <li class="company" data-date="Sep 2016 - Apr 2019">
                     <h3>Useall Software</h3>
+                    <span class="period">Sep 2016 – Apr 2019</span><!-- Calculate period -->
                     <div class="inside-exp">
                         <div class="role">
                             <span class="title">Full Stack Developer</span>
@@ -68,10 +82,6 @@
             </ul>
         </section>
     </article>
-    <footer class="row center">
-        <a class="btn-view" id="btn-about" data-for="about" href="#">About</a>
-        <a class="btn-view" id="btn-experience" data-for="experience" href="#">Experience</a>
-    </footer>
     <aside class="column social-media">
         <div class="item-media">
             <a href="https://github.com/gustavofabro" target="_blank"><img src="content/github-logo.png" alt="GitHub"

@@ -55,6 +55,12 @@
     color: #212121;
 }
 
+.company > .period {
+    display: block;
+    font-size: .9em;
+    margin-bottom: 15px;
+}
+
 .role .period {
     font-size: .7em;
     margin-top: 5px;
