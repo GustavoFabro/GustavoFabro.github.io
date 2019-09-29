@@ -104,7 +104,6 @@ header a {
 
 .avatar {
     height: 250px;
-    width: 250px;
     margin: 20px;
 }
 
@@ -133,10 +132,10 @@ header a {
         justify-content: flex-start;
         padding: 15px;
     }
-    .container-footer-d {
-        display: none;
-    }
     .about-text, .name {
         text-align: center;
+    }
+    .avatar {
+        height: 200px;
     }
 }

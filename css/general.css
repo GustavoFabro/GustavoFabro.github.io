@@ -37,10 +37,6 @@ body {
     flex: 1;
 }
 
-.d-none {
-    display: none;
-}
-
 .center {
     align-items: center;
     justify-content: center;
