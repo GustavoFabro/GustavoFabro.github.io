@@ -2,101 +2,149 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Chivo:300&display=swap" rel="stylesheet">
+ 	<link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chivo:300&display=swap" rel="stylesheet">
 
-    <!--Style-->
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/social-media.css">
-    <link rel="stylesheet" href="css/timeline.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/social-media.css">
+	<link rel="stylesheet" href="css/timeline.css">
 
-    <title>Gustavo Fabro</title>
+	<title>Gustavo Fabro</title>
 </head>
 
 <body>
-    <header class="row">
-        <div class="row menu center">
-            <div class="row center menu-item selected" data-for="about">
-                <a href="#">ABOUT</a>
-            </div>
-            <div class="row center menu-item" data-for="experience">
-                <a href="#">EXPERIENCE</a>
-            </div>
-        </div>
-        <div class="row mobile-toggle-menu">
-            <img class="menu-bar" src="content/bars-solid.svg" alt="Menu">
-        </div>
-    </header>
-    <div class="bg-image"></div>
-    <div class="column mobile-menu center">
-        <a class="menu-mobile-item" href="#" data-for="about">ABOUT</a>
-        <a class="menu-mobile-item" href="#" data-for="experience">EXPERIENCE</a>
-    </div>
-    <article class="column">
-        <section id="content-about" class="column container center">
-            <div class="avatar">
-                <img src="content/avatar.jpg">
-            </div>
-            <p class="name">Gustavo Fabro</p>
-            <p class="about-text">Full stack developer
-                <br>Bachelor in computer science from UNESC (2014 - 2018)
-            </p>
-        </section>
-        <section id="content-experience" class="column container center">
-            <ul class="timeline">
-                <li class="company" data-date="Apr 2019 - Present">
-                    <h3>Betha Sistemas</h3>
-                    <span class="period">Apr 2019 – Present</span><!-- Calculate period -->
-                    <div class="inside-exp">
-                        <div class="role">
-                            <span class="title">Full Stack Developer</span>
-                            <p class="content">Web developer working with AngularJS in front-end and Java Spring Boot in
-                                back-end with PostgreSQL</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="company" data-date="Sep 2016 - Apr 2019">
-                    <h3>Useall Software</h3>
-                    <span class="period">Sep 2016 – Apr 2019</span><!-- Calculate period -->
-                    <div class="inside-exp">
-                        <div class="role">
-                            <span class="title">Full Stack Developer</span>
-                            <div class="period">Jun 2017 – Apr 2019</div>
-                            <p>Web developer working on front end with Ext JS framework and back end with C # .NET and
-                                Oracle Database</p>
-                        </div>
-                        <div class="role">
-                            <div class="title">PowerBuilder developer</div>
-                            <div class="period">Sep 2016 – May 2017</div>
-                            <p>Desktop developer with PowerBuilder and Oracle Database</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-    </article>
-    <aside class="column social-media">
-        <div class="item-media">
-            <a href="https://github.com/gustavofabro" target="_blank"><img src="content/github-logo.png" alt="GitHub"
-                    title="GitHub"></a>
-        </div>
-        <div class="item-media">
-            <a href="https://www.linkedin.com/in/gustavo-fabro-a42701132/" target="_blank"><img
-                    src="content/linkedin.png" alt="LinkedIn" title="LinkedIn"></a>
-        </div>
-        <div class="item-media">
-            <a href="https://twitter.com/gustavofabro_" target="_blank"><img src="content/twitter.png" alt="Twitter"
-                    title="Twitter"></a>
-        </div>
-    </aside>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="script/main.js"></script>
+	<header class="row">
+		<div class="row menu center">
+			<div class="row center menu-item selected" data-for="intro">
+				<a href="#">INTRO</a>
+			</div>
+			<!-- <div class="row center menu-item" data-for="strengths">
+				<a href="#">STRENGTHS</a>
+			</div> -->
+			<div class="row center menu-item" data-for="experience">
+				<a href="#">EXPERIENCE</a>
+			</div>
+			<div class="row center menu-item" data-for="">
+				<a href="#">PROJECTS</a>
+			</div>
+		</div>
+		<div class="row mobile-toggle-menu">
+			<img class="menu-bar" src="content/menu.svg" alt="Menu">
+		</div>
+	</header>
+	<div class="column mobile-menu center">
+		<a class="menu-mobile-item" href="#" data-for="intro">INTRO</a>
+		<a class="menu-mobile-item" href="#" data-for="experience">EXPERIENCE</a>
+		<a class="menu-mobile-item" href="#" data-for="projects">PROJECTS</a>
+	</div>
+	<article class="column">
+		<section id="content-intro" class="column container center"><!-- Remover style -->
+			<div class="avatar">
+				<img src="content/iconfinder-3-avatar-2754579_120516.png">
+			</div>
+			<p></p>
+			<!-- 	<input id="terminal" type="text">
+				<p id="output-terminal"></p> -->
+		</section>
+	<!-- 	<section id="content-strengths" class="column container center">
+			<ul>
+				
+			</ul>
+		</section> -->
+		<section id="content-experience" class="column container center">
+			<ul id="experience-timeline">
+				<li class="company">
+					<div class="row">
+						<div class="company-logo">
+							<img src="content/betha-logo.jpeg">
+						</div>
+						<div class="column">
+							<div class="row info">
+								<h3>Betha Sistemas</h3>
+								<span>Apr 2019 - Present</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<p class="flex-item-1">Web developer working with AngularJS in front-end and Java Spring Boot in back-end with PostgreSQL</p>
+					</div>
+				</li>
+				<li class="company">
+					<div class="row">
+						<div class="company-logo">
+							<img src="content/useall-logo.png">
+						</div>
+						<div class="column">
+							<div class="row info">
+								<h3>Useall Software</h3>
+								<span>Sep 2016 – Apr 2019</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<p class="flex-item-1">Web developer working on front end with Ext JS framework and back end with C # .NET and Oracle Database</p>
+					</div>
+				</li>
+			</ul>
+			<!-- <ul class="timeline">
+				<li class="company" data-date="Apr 2019 - Present">
+					<h3>Betha Sistemas</h3>
+					<span class="period">Apr 2019 – Present</span>
+					<div class="inside-exp">
+						<div class="role">
+							<span class="title">Full Stack Developer</span>
+							<p class="content">Web developer working with AngularJS in front-end and Java Spring Boot in
+								back-end with PostgreSQL</p>
+						</div>
+					</div>
+				</li>
+				<li class="company" data-date="Sep 2016 - Apr 2019">
+					<h3>Useall Software</h3>
+					<span class="period">Sep 2016 – Apr 2019</span>
+					<div class="inside-exp">
+						<div class="role">
+							<span class="title">Full Stack Developer</span>
+							<div class="period">Jun 2017 – Apr 2019</div>
+							<p>Web developer working on front end with Ext JS framework and back end with C # .NET and
+								Oracle Database</p>
+						</div>
+						<div class="role">
+							<div class="title">PowerBuilder developer</div>
+							<div class="period">Sep 2016 – May 2017</div>
+							<p>Desktop developer with PowerBuilder and Oracle Database</p>
+						</div>
+					</div>
+				</li>
+			</ul> -->
+		</section>
+		<section id="content-projects" class="column container center"><!-- Remover style -->
+			
+		</section>
+	</article>
+	<aside class="column social-media">
+		<div class="item-media">
+			<a href="https://github.com/gustavofabro" target="_blank"><img src="content/github-logo.png" alt="GitHub"
+					title="GitHub"></a>
+		</div>
+		<div class="item-media">
+			<a href="https://www.linkedin.com/in/gustavo-fabro-a42701132/" target="_blank"><img src="content/linkedin.png"
+					alt="LinkedIn" title="LinkedIn"></a>
+		</div>
+		<div class="item-media">
+			<a href="https://twitter.com/gustavofabro_" target="_blank"><img src="content/twitter.png" alt="Twitter"
+					title="Twitter"></a>
+		</div>
+	</aside>
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+		<script src="script/jquery.min.js"></script>
+	<script type="text/javascript" src="script/main.js"></script>
 </body>
 
 </html>
