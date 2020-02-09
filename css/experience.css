@@ -1,4 +1,4 @@
-#experience-timeline {
+#experience-container {
   list-style: none;
   padding: 0;
   width: 70%;
@@ -51,7 +51,7 @@
 }
 
 @media screen and (max-width: 620px) {
-  #experience-timeline {
+  #experience-container {
     width: 100%;
   }
   .company-logo {

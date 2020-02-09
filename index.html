@@ -12,9 +12,10 @@
 	<!-- Style -->
 	<link rel="stylesheet" href="css/general.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/intro.css">
+	<link rel="stylesheet" href="css/experience.css">
+	<link rel="stylesheet" href="css/projects.css">
 	<link rel="stylesheet" href="css/social-media.css">
-	<link rel="stylesheet" href="css/timeline.css">
-
 	<title>Gustavo Fabro</title>
 </head>
 
@@ -30,7 +31,7 @@
 			<div class="row center menu-item" data-for="experience">
 				<a href="#">EXPERIENCE</a>
 			</div>
-			<div class="row center menu-item" data-for="">
+			<div class="row center menu-item" data-for="projects">
 				<a href="#">PROJECTS</a>
 			</div>
 		</div>
@@ -46,19 +47,14 @@
 	<article class="column">
 		<section id="content-intro" class="column container center"><!-- Remover style -->
 			<div class="avatar">
-				<img src="content/iconfinder-3-avatar-2754579_120516.png">
+				<img src="content/avatar2.png">
 			</div>
 			<p></p>
 			<!-- 	<input id="terminal" type="text">
 				<p id="output-terminal"></p> -->
 		</section>
-	<!-- 	<section id="content-strengths" class="column container center">
-			<ul>
-				
-			</ul>
-		</section> -->
 		<section id="content-experience" class="column container center">
-			<ul id="experience-timeline">
+			<ul id="experience-container">
 				<li class="company">
 					<div class="row">
 						<div class="company-logo">
@@ -92,39 +88,24 @@
 					</div>
 				</li>
 			</ul>
-			<!-- <ul class="timeline">
-				<li class="company" data-date="Apr 2019 - Present">
-					<h3>Betha Sistemas</h3>
-					<span class="period">Apr 2019 – Present</span>
-					<div class="inside-exp">
-						<div class="role">
-							<span class="title">Full Stack Developer</span>
-							<p class="content">Web developer working with AngularJS in front-end and Java Spring Boot in
-								back-end with PostgreSQL</p>
-						</div>
-					</div>
-				</li>
-				<li class="company" data-date="Sep 2016 - Apr 2019">
-					<h3>Useall Software</h3>
-					<span class="period">Sep 2016 – Apr 2019</span>
-					<div class="inside-exp">
-						<div class="role">
-							<span class="title">Full Stack Developer</span>
-							<div class="period">Jun 2017 – Apr 2019</div>
-							<p>Web developer working on front end with Ext JS framework and back end with C # .NET and
-								Oracle Database</p>
-						</div>
-						<div class="role">
-							<div class="title">PowerBuilder developer</div>
-							<div class="period">Sep 2016 – May 2017</div>
-							<p>Desktop developer with PowerBuilder and Oracle Database</p>
-						</div>
-					</div>
-				</li>
-			</ul> -->
 		</section>
-		<section id="content-projects" class="column container center"><!-- Remover style -->
-			
+		<section id="content-projects" class="column container center">
+			<div id="projects-container" class="row">
+				<a class="column flex-item-1 project-item" href="https://www.npmjs.com/package/get-torrents-cli" target="_blank">
+					<div class="project-logo">
+						<img src="content/npm-logo.jpg">
+					</div>
+					<p class="flex-item-1">CLI Web Scraper that extracts magnetic links from Google or from the informed URL</p>
+				</a>
+				<a class="column flex-item-1 project-item" href="https://github.com/cezaraugusto/You-Dont-Know-JS" target="_blank">
+					<div class="project-logo">
+						<img src="content/you-dont-know-js-logo.jpg">
+					</div>
+					<div class="row">
+						<p class="flex-item-1">Contributor of the PT-BR translation of the You Don't Know JS book series by Kyle Simpson.</p>
+					</div>
+				</a>
+			</div>
 		</section>
 	</article>
 	<aside class="column social-media">

@@ -1,74 +1,75 @@
-$(document).ready(onPageReady);
+$(document).ready(onPageReady)
 
 function onPageReady() {
   $(".mobile-toggle-menu").on("click", e => {
-    $(".mobile-menu").toggleClass("selected");
-  });
+    $(".mobile-menu").toggleClass("selected")
+  })
 
   $(".menu-item, .menu-mobile-item").on("click", e => {
     const target = e.target.hasAttribute("data-for")
       ? e.target
-      : e.target.parentElement;
+      : e.target.parentElement
 
-    setSection(target);
+    setSection(target)
   });
 
   function setSection(target) {
-    const targetDataFor = $(target).attr("data-for");
+    const targetDataFor = $(target).attr("data-for")
 
     $('[id^="content"]').hide();
-    $(".selected").toggleClass("selected");
+    $(".selected").toggleClass("selected")
 
-    $(`[id="content-${targetDataFor}"]`).fadeTo("slow", 1);
+    $(`[id="content-${targetDataFor}"]`).fadeTo("slow", 1)
 
-    $(target).toggleClass("selected");
+    $(target).toggleClass("selected")
   }
 
   function configureSection() {
-    const sessaoIntro = $('[data-for="intro"]')[0];
+    const sessaoIntro = $('[data-for="intro"]')[0]
 
-    setSection(sessaoIntro);
+    setSection(sessaoIntro)
   }
 
   async function configureText() {
     function getYearsWorking() {
-      return 3;
+      return 3
     }
 
     function splep(mili) {
-      return new Promise(resolve => setTimeout(() => resolve(), mili));
+      return new Promise(resolve => setTimeout(() => resolve(), mili))
     }
 
-    const textIntro = `Hi, I'm Gustavo, full stack developer with ${getYearsWorking()} years of experience in the field. Bachelor in computer science from UNESC (2014 - 2018).`;
+    const textIntro = `Hi, I'm Gustavo, full stack developer with ${getYearsWorking()} years of experience in the field. 
+    Bachelor in computer science from UNESC (2014 - 2018).`;
 
-    const element = $("#content-intro p")[0];
-    const textIntroParts = textIntro.split("");
+    const element = $("#content-intro p")[0]
+    const textIntroParts = textIntro.split("")
 
     for (let index = 0; index < textIntroParts.length; index++) {
-      const text = textIntroParts[index];
+      const text = textIntroParts[index]
 
-      await splep(20);
-      $(element).append(text);
+      await splep(20)
+      $(element).append(text)
     }
   }
 
   function configureTerminal() {
-    const terminalElement = $("#terminal");
+    const terminalElement = $("#terminal")
 
     terminalElement.keydown(e => {
       if (e.keyCode == 13) {
-        const jsOutput = eval(terminalElement.val());
+        const jsOutput = eval(terminalElement.val())
 
-        $("#output-terminal").text(jsOutput);
+        $("#output-terminal").text(jsOutput)
       }
-    });
+    })
   }
 
   function init() {
-    configureSection();
-    configureText();
-    configureTerminal();
+    configureSection()
+    configureText()
+    //configureTerminal()
   }
 
-  init();
+  init()
 }
