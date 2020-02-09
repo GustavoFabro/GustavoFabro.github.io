@@ -9,7 +9,7 @@
   background-color: rgba(255, 255, 255, 0.164);
   width: 350px;
   margin: 10px;
-  padding: 5px;
+  padding: 7px;
   border-radius: 8px;
   border: 1px solid #312d3c;
   transition: 0.3s;
@@ -22,6 +22,11 @@
 
 .project-logo img {
   width: 100%;
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .project-item p {
