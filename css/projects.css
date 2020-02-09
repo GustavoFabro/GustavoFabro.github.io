@@ -1,0 +1,39 @@
+#projects-container {
+  max-width: 70%;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  font-family: "Chivo", sans-serif;
+}
+
+.project-item {
+  background-color: rgba(255, 255, 255, 0.164);
+  width: 350px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid #312d3c;
+  transition: 0.3s;
+}
+
+.project-item:hover {
+  background-color: rgba(255, 255, 255, 0.28);
+}
+
+
+.project-logo img {
+  width: 100%;
+}
+
+.project-item p {
+  font-size: .5em;
+}
+
+@media screen and (max-width: 620px) {
+  #projects-container {
+    max-width: 100%;
+  }
+  .project-item {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}

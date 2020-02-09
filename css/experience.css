@@ -1,0 +1,70 @@
+#experience-container {
+  list-style: none;
+  padding: 0;
+  width: 70%;
+}
+
+.company {
+  font-family: "Chivo", sans-serif;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.164);
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #312d3c;
+}
+
+.company-logo img {
+  height: 100px;
+  margin-right: 10px;
+}
+
+.company h3 {
+  margin: 0;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.company .info {
+	justify-content: space-between;
+}
+
+.company p {
+  font-size: 0.5em;
+  margin: 5px 0 0 0;
+}
+
+.company span {
+  font-size: 0.7em;
+  margin-left: 10px;
+  align-self: center;
+  white-space: nowrap;
+}
+
+/*Media queries*/
+@media screen and (max-width: 1275px) {
+  .company .info {
+		flex-direction: column;
+	}
+	.company span {
+		align-self: initial;
+	}
+}
+
+@media screen and (max-width: 620px) {
+  #experience-container {
+    width: 100%;
+  }
+  .company-logo {
+    align-self: center;
+  }
+  .company span {
+    align-self: center;
+    margin-left: 0;
+  }
+  .company h3 {
+    align-self: center;
+	}
+	.company p {
+		margin: 10px 0 0 0;
+	}
+}
