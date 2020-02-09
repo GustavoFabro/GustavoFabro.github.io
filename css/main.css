@@ -30,6 +30,10 @@ article {
 article section {
   margin-top: -30px;
 }
+ 
+article section:not([id$=intro]) {
+  opacity: 0;
+}
 
 #content-intro p {
   width: 60%;
