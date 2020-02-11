@@ -39,7 +39,7 @@ function onPageReady() {
       return new Promise(resolve => setTimeout(() => resolve(), mili))
     }
 
-    const textIntro = `Hi, I'm Gustavo, full stack developer with ${getYearsWorking()} years of experience in the field. 
+    const textIntro = `Hi, I'm Gustavo Fabro, full stack developer with ${getYearsWorking()} years of experience in the field. 
     Bachelor in computer science from UNESC (2014 - 2018).`;
 
     const element = $("#content-intro p")[0]
