@@ -51,6 +51,6 @@ body {
 /*Media queries*/
 @media screen and (max-width: 620px) {
   body {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
