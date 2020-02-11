@@ -75,3 +75,9 @@ body {
     font-size: 10px;
   }
 }
+
+@media screen and (max-height: 665px){
+  body {
+    font-size: 12px;
+  }
+}
