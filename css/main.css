@@ -1,7 +1,6 @@
 .container {
   position: absolute;
   justify-content: center;
-  padding: 5px;
   height: 100%;
   width: 100%;
 }
@@ -112,6 +111,5 @@ article section:not([id$=intro]) {
   }
   .container {
     justify-content: flex-start;
-    padding: 15px;
   }
 }

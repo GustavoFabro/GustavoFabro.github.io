@@ -1,3 +1,11 @@
+
+#intro-container {
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  padding: 15px;
+}
+
 .avatar {
   height: 250px;
   margin: 20px;
@@ -24,6 +32,9 @@
 @media screen and (max-width: 620px) {
   #content-intro p {
     width: 100%;
+  }
+  #intro-container {
+    top: 50px;
   }
   .avatar {
     height: 200px;

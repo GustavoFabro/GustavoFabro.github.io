@@ -1,11 +1,11 @@
 #experience-container {
   list-style: none;
-  padding: 0;
+  padding: 15px;
   width: 70%;
+  font-family: "Chivo", sans-serif;
 }
 
 .company {
-  font-family: "Chivo", sans-serif;
   margin-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.164);
   padding: 10px;
