@@ -1,6 +1,10 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .container {
   position: absolute;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
   width: 100%;
 }
@@ -10,7 +14,9 @@ header {
   top: 0;
   width: 100%;
   height: 50px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   z-index: 2;
 }
 
@@ -63,10 +69,14 @@ article section:not([id$=intro]) {
 }
 
 .mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   opacity: 0;
   height: 0;
   width: 100%;
+  -webkit-transition: height 0.4s;
+  -o-transition: height 0.4s;
   transition: height 0.4s;
   background-color: black ;
 }
@@ -95,7 +105,9 @@ article section:not([id$=intro]) {
 /*Media queries*/
 @media screen and (max-width: 620px) {
   header {
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   header .mobile-toggle-menu {
     display: block;
@@ -104,12 +116,17 @@ article section:not([id$=intro]) {
     display: none;
   }
   article .row {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   article section {
     margin-top: 0;
   }
   .container {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
