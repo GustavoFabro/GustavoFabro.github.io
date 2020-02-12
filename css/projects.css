@@ -1,9 +1,13 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 #projects-container {
   max-width: 70%;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 30px;
   padding: 15px;
   font-family: "Chivo", sans-serif;
+  overflow-y: auto;
 }
 
 .project-item {
@@ -13,6 +17,8 @@
   padding: 7px;
   border-radius: 8px;
   border: 1px solid #312d3c;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -36,10 +42,13 @@
 }
 
 .projects-more {
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   text-align: center;
   margin-top: 20px;
   font-size: .4em;  
+  -webkit-transition: 0.3s;  
+  -o-transition: 0.3s;  
   transition: 0.3s;
 }
 
@@ -48,16 +57,20 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 768px) {
   #projects-container {
     max-width: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-bottom: 50px;
   }
   .project-item {
     width: 100%;
     margin: 0 0 10px 0;
   }
   .projects-more {
-    flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
     margin-top: 10px;
   }
 }
