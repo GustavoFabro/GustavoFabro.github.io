@@ -41,13 +41,14 @@ article section:not([id$=intro]) {
 }
 
 #content-intro p {
-  width: 60%;
+  width: 80%;
   line-height: 1.5;
   text-align: center;
 }
 
 .menu-item {
   background-color: transparent;
+  font-size: 20px;
   height: 100%;
   width: 155px;
 }
@@ -102,8 +103,7 @@ article section:not([id$=intro]) {
   width: 20px;
 }
 
-/*Media queries*/
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 768px) {
   header {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
