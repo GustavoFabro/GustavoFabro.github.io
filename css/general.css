@@ -26,7 +26,6 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Marcellus SC", serif;
-  font-size: 20px;
   color: white;
 }
 
@@ -69,14 +68,26 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 20em) {
   body {
-    font-size: 10px;
+    font-size: 10px
   }
 }
 
-@media screen and (max-height: 665px){
+@media screen and (min-width: 50em) {
   body {
-    font-size: 10px;
+    font-size: 12px
+  }
+}
+
+@media screen and (min-width: 60em) {
+  body {
+    font-size: 18px
+  }
+}
+
+@media screen and (min-width: 100em) {
+  body {
+    font-size: 20px
   }
 }
