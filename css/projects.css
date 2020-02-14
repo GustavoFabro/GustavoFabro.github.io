@@ -33,8 +33,8 @@
 .projects-more {
   flex-basis: 100%;
   text-align: center;
-  margin-top: 20px;
-  font-size: .4em;
+  margin-top: 10px;
+  font-size: .5em;
   transition: 0.3s;
 }
 
