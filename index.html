@@ -36,83 +36,11 @@
 			<img class="menu-bar" src="content/menu.svg" alt="Menu">
 		</div>
 	</header>
-	<div class="column mobile-menu center">
+	<div class="mobile-menu column center">
 		<a class="menu-mobile-item" href="#" data-for="intro">INTRO</a>
 		<a class="menu-mobile-item" href="#" data-for="experience">EXPERIENCE</a>
 		<a class="menu-mobile-item" href="#" data-for="projects">PROJECTS</a>
 	</div>
-	<article class="column">
-		<section id="content-intro" class="container">
-			<div id="intro-container" class="column center">
-				<div class="avatar">
-					<img src="content/avatar2.png">
-				</div>
-				<p></p>
-			</div>
-			<!-- 	<input id="terminal" type="text">
-				<p id="output-terminal"></p> -->
-		</section>
-		<section id="content-experience" class="column container center">
-			<ul id="experience-container">
-				<li class="company">
-					<div class="row">
-						<div class="company-logo">
-							<img src="content/betha-logo.jpeg">
-						</div>
-						<div class="column">
-							<div class="row info">
-								<h3>Betha Sistemas</h3>
-								<span>Apr 2019 - Present</span>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<p class="flex-item-1">Web developer working with AngularJS in front-end and Java Spring Boot in back-end
-							with PostgreSQL</p>
-					</div>
-				</li>
-				<li class="company">
-					<div class="row">
-						<div class="company-logo">
-							<img src="content/useall-logo.png">
-						</div>
-						<div class="column">
-							<div class="row info">
-								<h3>Useall Software</h3>
-								<span>Sep 2016 – Apr 2019</span>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<p class="flex-item-1">Web developer working on front end with Ext JS framework and back end with C # .NET
-							and Oracle Database</p>
-					</div>
-				</li>
-			</ul>
-		</section>
-		<section id="content-projects" class="column container center">
-			<div id="projects-container" class="row">
-				<a class="column flex-item-1 project-item" href="https://www.npmjs.com/package/get-torrents-cli"
-					target="_blank">
-					<div class="project-logo">
-						<img src="content/npm-logo.jpg">
-          </div>
-          <span class="project-title">get-torrents-cli</span>
-					<p class="flex-item-1">CLI Web Scraper that extracts magnetic links from Google or from the informed URL</p>
-				</a>
-				<a class="column flex-item-1 project-item" href="https://github.com/cezaraugusto/You-Dont-Know-JS"
-					target="_blank">
-					<div class="project-logo">
-						<img src="content/you-dont-know-js-logo.jpg">
-          </div>
-          <span class="project-title">You Don't Know JS PT-BR translation</span>
-					<p class="flex-item-1">Contributor of the PT-BR translation of the You Don't Know JS book series by Kyle Simpson.</p>
-				</a>
-				<a class="projects-more" href="https://github.com/gustavofabro?tab=repositories" target="_blank">Click here for
-					others projects</a>
-			</div>
-		</section>
-	</article>
 	<aside class="column social-media">
 		<div class="item-media">
 			<a href="https://github.com/gustavofabro" target="_blank"><img src="content/github-logo.png" alt="GitHub"
@@ -127,6 +55,64 @@
 					title="Twitter"></a>
 		</div>
 	</aside>
+	<article class="container">
+		<section id="content-intro" class="row center">
+			<div class="avatar">
+				<img src="content/avatar2.png">
+			</div>
+			<p></p>
+			<!-- 	<input id="terminal" type="text">
+				<p id="output-terminal"></p> -->
+		</section>
+		<section id="content-experience" class="row center">
+			<div class="company-item">
+				<div class="row">
+					<div class="company-item-logo">
+						<img src="content/betha-logo.jpeg">
+					</div>
+					<div class="column info">
+						<h3>Betha Sistemas</h3>
+						<span>Apr 2019 - Present</span>
+					</div>
+				</div>
+				<p>Web developer working with AngularJS in front-end and Java Spring Boot in back-end
+					with PostgreSQL</p>
+			</div>
+			<div class="company-item">
+				<div class="row">
+					<div class="company-item-logo">
+						<img src="content/useall-logo.png">
+					</div>
+					<div class="column info">
+						<h3>Useall Software</h3>
+						<span>Sep 2016 – Apr 2019</span>
+					</div>
+				</div>
+				<p>Web developer working on front end with Ext JS framework and back end with C # .NET
+					and Oracle Database</p>
+			</div>
+		</section>
+		<section id="content-projects" class="row center">
+			<a class="column project-item" href="https://www.npmjs.com/package/get-torrents-cli" target="_blank">
+				<div class="project-logo">
+					<img src="content/npm-logo.jpg">
+				</div>
+				<span class="project-title">get-torrents-cli</span>
+				<p class="">CLI Web Scraper that extracts magnetic links from Google or from the informed URL</p>
+			</a>
+			<a class="column project-item" href="https://github.com/cezaraugusto/You-Dont-Know-JS" target="_blank">
+				<div class="project-logo">
+					<img src="content/you-dont-know-js-logo.jpg">
+				</div>
+				<span class="project-title">You Don't Know JS PT-BR translation</span>
+				<p class="">Contributor of the PT-BR translation of the You Don't Know JS book series by Kyle
+					Simpson.</p>
+			</a>
+			<!-- <a class="projects-more" href="https://github.com/gustavofabro?tab=repositories" target="_blank">Click here for
+					others projects</a>
+				</ul> -->
+		</section>
+	</article>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="script/main.js"></script>

@@ -1,89 +1,47 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
-#experience-container {
-  list-style: none;
-  padding: 15px;
-  width: 70%;
-  font-family: "Chivo", sans-serif;
-}
-
-.company {
-  margin-bottom: 20px;
+.company-item {
   background-color: rgba(255, 255, 255, 0.164);
-  padding: 10px;
+  margin: 10px;
+  padding: 7px;
   border-radius: 8px;
   border: 1px solid #312d3c;
+  flex-basis: 90%;
 }
 
-.company-logo img {
+.company-item-logo img {
   height: 100px;
   margin-right: 10px;
 }
 
-.company h3 {
+.company-item h3 {
   margin: 0;
   font-weight: bold;
   white-space: nowrap;
 }
 
-.company .info {
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+.company-item .info {
+  margin-left: 10px;
 }
 
-.company p {
+.company-item p {
   font-size: 0.5em;
   margin: 5px 0 0 0;
 }
 
-.company span {
-  font-size: 0.7em;
-  margin-left: 10px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.company-item span {
+  font-size: 0.4em;
   white-space: nowrap;
 }
 
-/*Media queries*/
-@media screen and (max-width: 1275px) {
-  .company .info {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-	}
-	.company span {
-		-ms-flex-item-align: initial;
-		    -ms-grid-row-align: initial;
-		    align-self: initial;
-	}
+@media screen and (min-width: 20em) {
+  .company-item .row {
+    justify-content: center;
+  }
 }
 
-@media screen and (max-width: 768px) {
-  #experience-container {
-    width: 100%;
-    overflow-y: auto;
-    margin-bottom: 40px
+@media screen and (min-width: 50em) {
+  .company-item .row {
+    justify-content: flex-start;
   }
-  .company-logo {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  .company span {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin-left: 0;
-  }
-  .company h3 {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-	}
-	.company p {
-		margin: 10px 0 0 0;
-	}
 }
