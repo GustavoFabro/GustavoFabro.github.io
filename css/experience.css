@@ -6,7 +6,8 @@
   padding: 7px;
   border-radius: 8px;
   border: 1px solid #312d3c;
-  flex-basis: 90%;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
 }
 
 .company-item-logo img {
@@ -36,12 +37,16 @@
 
 @media screen and (min-width: 20em) {
   .company-item .row {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media screen and (min-width: 50em) {
   .company-item .row {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }

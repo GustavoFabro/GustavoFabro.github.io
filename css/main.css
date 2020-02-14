@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .container {
   max-width: 1335px;
   margin: 0px auto;
@@ -59,11 +61,15 @@ article section:not([id$=intro]) {
 
 .mobile-menu {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   opacity: 0;
   height: 0;
   top: 0;
   width: 100%;
+  -webkit-transition: height 0.4s;
+  -o-transition: height 0.4s;
   transition: height 0.4s;
   background-color: black;
 }
@@ -78,6 +84,8 @@ article section:not([id$=intro]) {
 }
 
 .mobile-menu.selected {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
   height: 100%;
@@ -93,7 +101,9 @@ article section:not([id$=intro]) {
 @media screen and (max-width: 50em) {
   header {
     height: 35px;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   header .mobile-toggle-menu {
     display: block;

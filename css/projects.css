@@ -4,11 +4,14 @@
   background-color: rgba(255, 255, 255, 0.164);
   width: 259px;
   position: relative;
-  flex-basis: 33.33%;
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
   margin: 10px;
   padding: 7px;
   border-radius: 8px;
   border: 1px solid #312d3c;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
   transition: background 0.3s;
 }
 
@@ -31,10 +34,13 @@
 }
 
 .projects-more {
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   text-align: center;
   margin-top: 10px;
   font-size: .5em;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -45,53 +51,23 @@
 
 @media screen and (min-width: 20em) {
   .project-item {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     height: 100%;
   }
 }
 
 @media screen and (min-width: 30em) {
   .project-item {
-    flex-basis: 60%;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
   }
 }
 
 @media screen and (min-width: 50em) {
   .project-item {
-    flex-basis: 33.33%;
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
     height: 380px;
   }
 }
-
-
-/* 
-@media screen and (min-width: 60em) {
-  project-item {
-    flex-basis: ;
-  }
-}
-
-@media screen and (min-width: 100em) {
-  project-item {
-    flex-basis: ;
-  }
-}
- */
-/* 
-@media screen and (max-width: 768px) {
-  #content-projects {
-    max-width: 100%;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    margin-bottom: 50px;
-  }
-  .project-item {
-    width: 100%;
-    margin: 0 0 10px 0;
-  }
-  .projects-more {
-    -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-    margin-top: 10px;
-  }
-} */
