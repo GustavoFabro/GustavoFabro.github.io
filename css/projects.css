@@ -4,9 +4,7 @@
   background-color: rgba(255, 255, 255, 0.164);
   width: 259px;
   position: relative;
-  -ms-flex-preferred-size: 33.33%;
-      flex-basis: 33.33%;
-  margin: 10px;
+  margin: 0.25em;
   padding: 7px;
   border-radius: 8px;
   border: 1px solid #312d3c;
@@ -66,8 +64,8 @@
 
 @media screen and (min-width: 50em) {
   .project-item {
-    -ms-flex-preferred-size: 33.33%;
-        flex-basis: 33.33%;
+    -ms-flex-preferred-size: calc(33.33% - .5em);
+        flex-basis: calc(33.33% - .5em);
     height: 380px;
   }
 }
