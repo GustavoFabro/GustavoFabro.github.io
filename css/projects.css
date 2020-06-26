@@ -66,6 +66,6 @@
   .project-item {
     -ms-flex-preferred-size: calc(33.33% - .5em);
         flex-basis: calc(33.33% - .5em);
-    height: 380px;
+    height: 350px;
   }
 }
