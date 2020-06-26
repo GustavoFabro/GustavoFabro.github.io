@@ -32,21 +32,22 @@ function onPageReady() {
 
   async function configureText() {
     function getYearsWorking() {
-      return 3
+      return 4
     }
 
     function splep(mili) {
       return new Promise(resolve => setTimeout(() => resolve(), mili))
     }
 
-    const textIntro = `Hi, I'm Gustavo Fabro, full stack developer with ${getYearsWorking()} years of experience in the field. 
+    const introText = `Hi, I'm Gustavo Fabro, full stack web developer with ${getYearsWorking()} years of professional experience in the field. 
+    I've been programming since I was 17. 
     Bachelor in computer science from UNESC (2014 - 2018).`;
 
     const element = $("#content-intro p")[0]
-    const textIntroParts = textIntro.split("")
+    const introTextParts = introText.split("")
 
-    for (let index = 0; index < textIntroParts.length; index++) {
-      const text = textIntroParts[index]
+    for (let index = 0; index < introTextParts.length; index++) {
+      const text = introTextParts[index]
 
       await splep(20)
       $(element).append(text)
