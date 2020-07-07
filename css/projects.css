@@ -31,22 +31,6 @@
   margin-bottom: 0;
 }
 
-.projects-more {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  text-align: center;
-  margin-top: 10px;
-  font-size: .5em;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.projects-more:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 20em) {
   .project-item {
     -ms-flex-preferred-size: 100%;
