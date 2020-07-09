@@ -10,6 +10,7 @@
 
 .project-item-container .project-item {
   background-color: rgba(255, 255, 255, 0.164);
+  border: 1px solid #312d3c;
   border-radius: 8px;
   height: 100%;
   padding: 7px;
