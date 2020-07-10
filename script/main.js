@@ -1,18 +1,14 @@
 $(document).ready(onPageReady)
 
 function onPageReady() {
-  $(".mobile-toggle-menu").on("click", e => {
-    $(".mobile-menu").toggleClass("selected")
-  })
-
-  $(".menu-item, .menu-mobile-item").on("click", e => {
-    const target = e.target.hasAttribute("data-for")
-      ? e.target
-      : e.target.parentElement
-
-    setSection(target)
-  });
-
+  function init() {
+    configureSection()
+    configureText()
+    configureProjectItems()
+    configureMenu()
+    //configureTerminal()
+  }
+  
   function setSection(target) {
     const targetDataFor = $(target).attr("data-for")
 
@@ -66,10 +62,32 @@ function onPageReady() {
     })
   }
 
-  function init() {
-    configureSection()
-    configureText()
-    //configureTerminal()
+  function configureProjectItems() {
+    $(".project-item").on("click", e => {
+      const url = e.currentTarget.getAttribute('to') 
+
+      if (url) {
+        window.open(url)
+      } 
+    })
+  }
+
+  function configureMenu() {
+    $(".mobile-toggle-menu").on("click", e => {
+      $(".mobile-menu").toggleClass("selected")
+    })
+  
+    $(".menu-item, .menu-mobile-item").on("click", e => {
+      const target = e.target.hasAttribute("data-for")
+        ? e.target
+        : e.target.parentElement
+  
+      setSection(target)
+    });
+  }
+
+  function openLink(url) {
+
   }
 
   init()

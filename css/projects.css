@@ -1,20 +1,28 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
-.project-item {
-  background-color: rgba(255, 255, 255, 0.164);
-  width: 259px;
+.project-item-container {
   position: relative;
-  margin: 0.25em;
-  padding: 7px;
-  border-radius: 8px;
-  border: 1px solid #312d3c;
-  -webkit-transition: background 0.3s;
-  -o-transition: background 0.3s;
-  transition: background 0.3s;
+  height: 380px;
+  width: 33.33%;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.project-item:hover {
+.project-item-container .project-item {
+  background-color: rgba(255, 255, 255, 0.164);
+  border: 1px solid #312d3c;
+  border-radius: 8px;
+  height: 100%;
+  padding: 7px;
+  -webkit-transition: background 0.3s, transform 0.3s;
+  -o-transition: background 0.3s, transform 0.3s;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.project-item-container .project-item:hover {
   background-color: rgba(255, 255, 255, 0.28);
+  transform: scale(1.05);
+
 }
 
 .project-logo img {
@@ -31,47 +39,21 @@
   margin-bottom: 0;
 }
 
-.projects-more {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  text-align: center;
-  margin-top: 10px;
-  font-size: .5em;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.projects-more:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-@media screen and (min-width: 20em) {
-  .project-item {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    height: 100%;
-  }
-}
-
-@media screen and (min-width: 30em) {
-  .project-item {
+@media screen and (max-width: 50em) {
+  .project-item-container {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
   }
-}
 
-@media screen and (min-width: 50em) {
-  .project-item {
-    -ms-flex-preferred-size: calc(33.33% - .5em);
-        flex-basis: calc(33.33% - .5em);
-    height: 350px;
+  #content-projects {
+    justify-content: center;
   }
 }
 
-@media screen and (max-width: 50em) {
-  #content-projects {
-    justify-content: center;
+@media screen and (max-width: 30em) {
+  .project-item-container {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 100%;
   }
 }
