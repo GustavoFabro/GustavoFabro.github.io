@@ -20,7 +20,7 @@ html {
 body {
   height: 100vh;
   margin: 0;
-  font-family: "Marcellus SC", serif;
+  font-family:  "Chivo", sans-serif;
   color: white;
 }
 
@@ -60,5 +60,9 @@ body {
 @media screen and (max-width: 50em) {
   body {
     font-size: 10px
+  }
+  .row:not(header) {
+    flex-flow: column wrap;
+    align-items: center;
   }
 }

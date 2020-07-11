@@ -28,16 +28,16 @@ function onPageReady() {
 
   async function configureText() {
     function getYearsWorking() {
-      return 4
+      return new Date().getFullYear() - 2016
     }
 
     function splep(mili) {
       return new Promise(resolve => setTimeout(() => resolve(), mili))
     }
 
-    const introText = `Hi, I'm Gustavo Fabro, full stack web developer with ${getYearsWorking()} years of professional experience in the field. 
-    I've been programming since I was 17. 
-    Bachelor in computer science from UNESC (2014 - 2018).`;
+    const introText = `I'm Gustavo Fabro, full stack web developer with ${getYearsWorking(4)} years of professional experience in the field. I've been programming since I was 17. Bachelor in computer science from UNESC (2014 - 2018). 
+    My favorite programming language is Javascript, and most of my studies are focused on its ecosystem 
+    (Typescript, React, ReactNative, Node, etc.). I'm also a huge fan of clean code.`
 
     const element = $("#content-intro p")[0]
     const introTextParts = introText.split("")

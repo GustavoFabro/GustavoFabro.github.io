@@ -1,0 +1,36 @@
+.container-skills {
+  width: 80%;
+  margin-top: 10%;
+}
+
+.skill-item img {
+  padding: 10px;
+  height: 130px;
+}
+
+.container-skills span{
+  margin: 0;
+}
+
+.divider {
+  display: flex;
+  margin: 0 0 10px 0;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+}
+
+.line {
+  align-items: center;
+}
+
+.line::before, .line::after {
+  height: 2px;
+  margin: 0 1em;
+}
+
+.one-line::before, .one-line::after {
+  background-color:  rgba(255, 255, 255, 0.28);
+}
