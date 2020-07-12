@@ -1,6 +1,6 @@
 .container-skills {
-  width: 80%;
-  margin-top: 10%;
+  width: 100%;
+  margin-top: 5%;
 }
 
 .skill-item img {
@@ -33,4 +33,11 @@
 
 .one-line::before, .one-line::after {
   background-color:  rgba(255, 255, 255, 0.28);
+}
+
+@media screen and (max-width: 50em) {
+  #skills {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
 }

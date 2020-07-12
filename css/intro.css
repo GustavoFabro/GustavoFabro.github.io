@@ -5,7 +5,7 @@
 
 .avatar img {
   height: 100%;
-  border-radius: 50%;
+  border-radius: 8%;
 }
 
 #content-intro p {
@@ -13,6 +13,7 @@
   line-height: 1.5;
   font-size: .7em;
   margin-top: 10px;
+  text-align: justify;
   flex: 1;
 }
 
