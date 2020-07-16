@@ -1,15 +1,21 @@
 .container-skills {
   width: 100%;
-  margin-top: 5%;
+  margin-top: 3%;
+  align-items: flex-start;
 }
 
-.skill-item img {
-  padding: 10px;
-  height: 130px;
-}
-
-.container-skills span{
+.container-skills h4{
   margin: 0;
+}
+
+.container-skills ul {
+  flex: 1;
+  font-size: .7em;
+  flex-flow: row wrap;
+}
+
+.container-skills ul li{
+  width: 33%;
 }
 
 .divider {
