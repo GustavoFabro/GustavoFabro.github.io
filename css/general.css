@@ -1,4 +1,9 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -57,12 +62,17 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 40em) {
   body {
     font-size: 10px
   }
   .row:not(header) {
-    flex-flow: column wrap;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }

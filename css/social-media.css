@@ -1,4 +1,9 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
 .social-media {
     position: fixed;
@@ -15,8 +20,8 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
             flex-flow: row;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 1, 0)), color-stop(rgba(0, 0, 1, 0.71)), to(rgb(0, 0, 0)));
     background: -o-linear-gradient(rgba(0, 0, 1, 0), rgba(0, 0, 1, 0.71), rgb(0, 0, 0));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 1, 0)), color-stop(rgba(0, 0, 1, 0.71)), to(rgb(0, 0, 0)));
     background: linear-gradient(rgba(0, 0, 1, 0), rgba(0, 0, 1, 0.71), rgb(0, 0, 0));
 }
 

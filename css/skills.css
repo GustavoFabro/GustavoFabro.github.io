@@ -1,7 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .container-skills {
   width: 100%;
-  margin-top: 3%;
-  align-items: flex-start;
+  margin-top: 30px;
+  padding: 10px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .container-skills h4{
@@ -9,9 +19,14 @@
 }
 
 .container-skills ul {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   font-size: .7em;
-  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .container-skills ul li{
@@ -19,17 +34,23 @@
 }
 
 .divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 0 10px 0;
 }
 
 .divider::before, .divider::after {
     content: "";
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 
 .line {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .line::before, .line::after {
@@ -41,9 +62,24 @@
   background-color:  rgba(255, 255, 255, 0.28);
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 40em) {
   #skills {
-    flex-flow: row wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .container-skills {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .container-skills ul li {
+    width: 50%;
   }
 }

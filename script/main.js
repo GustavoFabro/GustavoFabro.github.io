@@ -3,7 +3,7 @@ $(document).ready(onPageReady)
 function onPageReady() {
   function init() {
     configureSection()
-    configureText()
+    // configureText()
     configureProjectItems()
     configureMenu()
     //configureTerminal()

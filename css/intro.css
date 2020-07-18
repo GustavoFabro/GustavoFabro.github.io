@@ -1,6 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .avatar {
   height: 250px;
-  margin: 20px;
+  margin: 20px 20px 0 0;
 }
 
 .avatar img {
@@ -9,12 +16,17 @@
 }
 
 #content-intro p {
-  width: 80%;
   line-height: 1.5;
   font-size: .7em;
   margin-top: 10px;
   text-align: justify;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container-resume {
+  padding: 10px;
 }
 
 /* terminal */
@@ -36,9 +48,13 @@
   }
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 40em) {
   #content-intro p {
     text-align: center;
     margin: 10px 0 0 0;
+  }
+
+  .avatar {
+    margin: 20px;
   }
 }
